@@ -1,177 +1,122 @@
-# Hindi Voice Chatbot
+# 🎙️ Hindi Voice Agent with Emotional Responses
 
-# 🎙️ Hindi Voice Assistant
-
-A Hindi Voice Assistant built using **OpenAI Whisper**, **NVIDIA Llama**, **Gradio**, and **Edge TTS**. The application accepts spoken Hindi input, converts it to text, generates an intelligent response using an LLM, and returns the response as both text and speech.
+An intelligent Hindi voice assistant that listens, understands, and responds with **emotionally expressive speech**. This project combines speech recognition, large language models, and expressive voice synthesis to create a more human-like conversational experience.
 
 ---
 
 ## 🚀 Features
 
-- 🎤 Speech-to-Text using OpenAI Whisper
-- 🤖 Hindi conversation using NVIDIA Llama API
-- 🔊 Text-to-Speech using Edge TTS
-- 🌐 Interactive web interface with Gradio
-- 🇮🇳 Optimized for Hindi language interaction
+* 🗣️ **Hindi Speech Recognition** using Whisper
+* 🧠 **LLM-Powered Responses** using NVIDIA LLM
+* 🎭 **Emotion-Aware Replies** (happy, sad, neutral, etc.)
+* 🔊 **Expressive Voice Output** using Fish Audio
+* 🌐 **Interactive UI** built with Gradio
+* ⚡ Real-time voice interaction pipeline
 
 ---
 
-## 🛠️ Tech Stack
+## 🏗️ Tech Stack
 
-- Python
-- OpenAI Whisper
-- NVIDIA AI Endpoints (Llama)
-- Edge TTS
-- Gradio
-- LangChain
-- FFmpeg
+* **Frontend/UI:** Gradio
+* **Speech-to-Text:** Whisper
+* **Language Model:** NVIDIA LLM
+* **Text-to-Speech:** Fish Audio
+* **Programming Language:** Python
 
 ---
 
-## 📂 Project Structure
+## 🔄 Workflow
 
-```
-Hindi-Voice-Agent/
-│
-├── Hindi_voice_agent.ipynb
-├── README.md
-└── requirements.txt
-```
+1. 🎤 User speaks in Hindi
+2. 📝 Whisper converts speech → text
+3. 🧠 NVIDIA LLM processes input and generates response
+4. 🎭 Emotion is inferred from context
+5. 🔊 Fish Audio converts response → expressive speech
+6. 🌐 Output is displayed and played via Gradio UI
 
 ---
 
-## ⚙️ Installation
-
-Clone the repository:
+## 📦 Installation
 
 ```bash
-git clone https://github.com/Krrish9381/Hindi-Voice-Chatbot.git
-cd Hindi-Voice-Chatbot
-```
+# Clone the repository
+git clone https://github.com/your-username/hindi-voice-agent.git
 
-Install dependencies:
+# Navigate into project
+cd hindi-voice-agent
 
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
-
-If you are using Google Colab, install the required packages:
-
-```bash
-pip install openai-whisper
-pip install gradio
-pip install ffmpeg-python
-pip install langchain-nvidia-ai-endpoints
-pip install python-dotenv
-pip install edge-tts
-```
-
----
-
-## 🔑 Environment Variables
-
-Create a `.env` file and add your NVIDIA API key:
-
-```env
-NVIDIA_API_KEY=YOUR_API_KEY
 ```
 
 ---
 
 ## ▶️ Usage
 
-Run the notebook or launch the Gradio interface.
+```bash
+python app.py
+```
 
-Workflow:
+Then open the Gradio interface in your browser and start interacting with the voice agent.
+
+---
+
+## 📁 Project Structure
 
 ```
-🎤 User speaks in Hindi
-        │
-        ▼
-OpenAI Whisper
-        │
-        ▼
-Hindi Transcript
-        │
-        ▼
-NVIDIA Llama
-        │
-        ▼
-LLM Response
-        │
-        ▼
-Edge TTS
-        │
-        ▼
-🔊 Hindi Speech Output
+├── app.py                # Main application file
+├── requirements.txt     # Dependencies
+├── models/              # Model-related files
+├── audio/               # Input/output audio files
+├── utils/               # Helper functions
+└── README.md            # Project documentation
 ```
 
 ---
 
-## 📸 Demo
+## 🎯 Use Cases
 
-Example:
-
-**Input (Speech):**
-
-> "आज का मौसम कैसा है?"
-
-**Transcript:**
-
-> आज का मौसम कैसा है?
-
-**LLM Response:**
-
-> आज मौसम सामान्य रहने की संभावना है।
-
-**Speech Output:**
-
-Generated as an audio response in Hindi.
+* 🧑‍🏫 Educational assistants in Hindi
+* 🤖 Conversational AI with emotional intelligence
+* 📞 Voice-based customer support
+* 🎙️ Accessibility tools
 
 ---
 
-## 📦 Requirements
+## 🔮 Future Improvements
 
-- Python 3.10+
-- Internet connection
-- NVIDIA API Key
-
----
-
-## 🎯 Future Improvements
-
-- Support multiple Indian languages
-- Conversation history
-- Voice selection
-- Faster streaming responses
-- Deployment on Hugging Face Spaces
-- Mobile-friendly interface
+* 🌍 Multi-language support
+* 🎭 Advanced emotion detection
+* 📱 Mobile app integration
+* 🧠 Context memory for long conversations
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Open a Pull Request.
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
 
 ---
 
-## 📄 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+## 🙌 Acknowledgements
 
-**Krrish**
-
-GitHub: https://github.com/Krrish9381
+* OpenAI Whisper
+* NVIDIA LLM
+* Fish Audio
+* Gradio
 
 ---
 
-⭐ If you found this project useful, please consider giving it a star!
+## 📬 Contact
+
+For queries or collaboration, reach out via GitHub or email.
+
+---
+
+⭐ If you like this project, don’t forget to star the repo!
