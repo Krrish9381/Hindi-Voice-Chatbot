@@ -59,13 +59,8 @@ jupyter notebook
 ### Option 2: Run in Google Colab
 
 1. Upload the `.ipynb` file to Colab
-2. Install required dependencies in a cell:
-
-   ```python
-   !pip install -r requirements.txt
-   ```
-3. Run all cells
-4. Interact with the voice agent
+2. Run all cells
+3. Interact with the voice agent
 
 ---
 
@@ -73,7 +68,6 @@ jupyter notebook
 
 ```
 ├── hindi_voice_agent.ipynb   # Main notebook
-├── requirements.txt          # Dependencies (if added)
 └── README.md                 # Project documentation
 ```
 
